@@ -7,7 +7,7 @@ Features
 ---------
 * Works off of forked copy of original gem to allow proper dockerization
 * Uses thin as webserver to prevent reverse dns lookup (causing big slowdowns)
-* Exposes fake_sns database to "/sns" VOLUME for file based verification
+* Exposes fake_sns database to "/messages/sns" VOLUME for file based verification
 
 Running
 -------
