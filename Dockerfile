@@ -4,8 +4,8 @@ COPY Gemfile /Gemfile
 RUN bundle install
 
 RUN useradd -u 1000 -M docker \
-  && mkdir -p /sns \
-  && chown docker /sns
+  && mkdir -p /messages/sns \
+  && chown docker /messages/sns
 USER docker
 
 VOLUME /messages/sns
